@@ -3,14 +3,235 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss">
-
-    </style>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script> 
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <title>Youtube Tailwind</title> 
+    <style type="text/tailwindcss"></style>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline text-red-900">
-      Hello world!
-    </h1>
+  <body class="bg-[#F8F8F8]">
+    <header class="bg-white shadow-md h-14 px-4 md:px-6 flex justify-between items-center sticky top-0 z-50">
+      <div class="flex items-center">
+          <button class="p-2 hover:bg-gray-100 rounded-full">
+              <img src="icons/hamburger-menu.svg" alt="Menu" class="w-6 h-6">
+          </button>
+          <img src="icons/youtube-logo.svg" alt="YouTube" class="ml-4 hidden sm:block h-5">
+          <img src="icons/youtube-logo.svg" alt="YouTube" class="ml-4 sm:hidden h-5">
+      </div>
+      
+      <div class="flex-grow max-w-2xl mx-4 hidden md:flex">
+          <div class="flex w-full">
+              <input 
+                  type="search" 
+                  placeholder="Search" 
+                  class="w-full px-4 py-2 text-gray-700 bg-gray-100 rounded-l-full border border-gray-300 focus:outline-none focus:border-blue-500"
+              >
+              <button class="px-6 bg-gray-100 rounded-r-full border border-l-0 border-gray-300 hover:bg-gray-200">
+                  <img src="icons/search.svg" alt="Search" class="w-5 h-5">
+              </button>
+          </div>
+          <button class="ml-4 p-2 bg-gray-100 rounded-full hover:bg-gray-200">
+              <img src="icons/voice-search-icon.svg" alt="Voice Search" class="w-6 h-6">
+          </button>
+      </div>
+      
+      <div class="flex items-center">
+          <button class="p-2 hover:bg-gray-100 rounded-full md:hidden">
+              <img src="icons/search.svg" alt="Search" class="w-6 h-6">
+          </button>
+          <button class="p-2 hover:bg-gray-100 rounded-full hidden sm:block">
+              <img src="icons/upload.svg" alt="Upload" class="w-6 h-6">
+          </button>
+          <button class="p-2 hover:bg-gray-100 rounded-full hidden sm:block">
+              <img src="icons/youtube-apps.svg" alt="YouTube Apps" class="w-6 h-6">
+          </button>
+          <button class="p-2 hover:bg-gray-100 rounded-full relative">
+              <img src="icons/notifications.svg" alt="Notifications" class="w-6 h-6">
+              <span class="absolute top-0 right-0 bg-red-500 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">
+                  3
+              </span>
+          </button>
+          <button class="ml-2 rounded-full overflow-hidden">
+              <img src="channel-pictures/my-channel.jpeg" alt="Channel" class="w-8 h-8">
+          </button>
+      </div>
+  </header>
+
+  <nav class="sidebar hidden md:inline-block bg-white fixed top-[55px] bottom-0 left-0 w-[72px] lg:w-[240px] 
+  border-r-2 border-[#EBEBEB] z-200 pt-[5px]">
+    <div class="sidebar-link bg-white flex flex-col md:flex-row cursor h-[74px] items-center hover:bg-[#EBEBEB]">
+      <img class="h-6 lg:px-[15px]"  src="icons/home.svg">
+      <div class="text-[10px]">Home</div>
+    </div>
+    <div class="sidebar-link bg-white flex flex-col md:flex-row cursor h-[74px] items-center hover:bg-[#EBEBEB] ">
+      <img class="h-6 lg:px-[15px]"  src="icons/explore.svg">
+      <div class="text-[10px]">Explore</div>
+    </div>
+    <div class="sidebar-link bg-white flex flex-col md:flex-row cursor h-[74px] items-center hover:bg-[#EBEBEB] ">
+      <img class="h-6 lg:px-[15px]"  src="icons/subscriptions.svg">
+      <div class="text-[10px]">Subscriptions</div>
+    </div>
+    <div class="sidebar-link bg-white flex flex-col md:flex-row cursor h-[74px] items-center hover:bg-[#EBEBEB] ">
+      <img class="h-6 lg:px-[15px]"  src="icons/originals.svg">
+      <div class="text-[10px]">Orginals</div>
+    </div>
+    <div class="sidebar-link bg-white flex flex-col md:flex-row cursor h-[74px] items-center hover:bg-[#EBEBEB] ">
+      <img class="h-6 lg:px-[15px]"  src="icons/YouTube-music.svg">
+      <div class="text-[10px]">YouTube Music</div>
+    </div>
+    <div class="sidebar-link bg-white flex flex-col md:flex-row cursor h-[74px] items-center hover:bg-[#EBEBEB] ">
+      <img class="h-6 lg:px-[15px]"  src="icons/library.svg">
+      <div class="text-[10px]">Library</div>
+    </div>
+  </nav>
+
+  <main class="p-5 ml-[74px] lg:ml-[240px]">
+    <section class="video-grid grid grid-cols-2 gap-y-10 gap-x-4 lg:grid-cols-3 lg:grid-rows-2">
+
+      <div class="video-preview">
+    <div class="thumbnail-row relative mb-2">
+      <img class="thumbnail w-[100%]" src="thumbnails/thumbnail-1.webp">
+      <div class="time text-[12px] bg-black font-[500] text-white absolute right-[5px] bottom-2 p-1 rounded-[2px]">12:30</div>
+    </div>
+    <div class="video-info-grid grid grid-cols-[50px_1fr]">
+      <a href="https://www.youtube.com/c/mkbhd" target="_blank">
+      <div class="channel-picture relative">
+        <img class="profile-picture rounded-[50px] w-[36px]" src="channel-pictures/channel-1.jpeg">
+      </div>
+        
+      </a>
+      
+      <div class="video-info">
+        <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank" class="video-title-link">
+          <p class="video-title text-[14px] font-[500] mb-[10px]">
+          Talking Tech and AI with Google CEO Sundar Pichai!
+        </p>
+        </a>
+        <p class="video-author text-[12px]">
+          Marques Brownlee
+        </p>
+        <p class="video-stats">
+          3.4M views &#183; 6 months ago
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="video-preview">
+    <div class="thumbnail-row relative mb-2">
+      <img class="thumbnail w-[100%]" src="thumbnails/thumbnail-2.webp">
+      <div class="time text-[12px] bg-black font-[500] text-white absolute right-[5px] bottom-2 p-1 rounded-[2px]">8:22</div>
+    </div>
+    <div class="video-info-grid grid grid-cols-[50px_1fr]">
+      <div class="channel-picture relative">
+        <img class="profile-picture rounded-[50px] w-[36px]" src="channel-pictures/channel-2.jpeg">
+      </div>
+      <div class="video-info">
+      <a class="video-title-link"   href="https://www.youtube.com/watch?v=mP0RAo9SKZk" target="_blank">
+           <p class="video-title">
+          Try Not To Laugh Challenge #9
+        </p></a>
+        
+        <p class="video-author font-[500] mb-[10px] text-[12px]">
+          Markiplier
+        </p>
+        <p class="video-stats">
+          19M views &#183; 4 years ago
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="video-preview">
+    <div class="thumbnail-row relative mb-2">
+      <img class="thumbnail w-[100%]" src="thumbnails/html-css-full-course-cover.png">
+      <div class="time text-[12px] bg-black font-[500] text-white absolute right-[5px] bottom-2 p-1 rounded-[2px]">06:31:24 </div>
+    </div>
+    <div class="video-info-grid grid grid-cols-[50px_1fr]">
+      <div class="channel-picture relative">
+        <img class="profile-picture rounded-[50px] w-[36px]" src="channel-pictures/my-channel.jpeg">
+        <div class="dev-tooltip hidden hover:block">
+       <img class="dev-picture"   src="channel-pictures/my-channel.jpeg">
+         <div>
+           <div class="dev-name">supersimpledev</div>         
+           <div
+class="dev-stats">10M Subscribers</div>
+         </div>
+        </div>
+      </div>
+      <div class="video-info">
+        <a class="video-title-link" href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://m.youtube.com/watch%3Fv%3DG3e-cpL7ofc&ved=2ahUKEwihn9yl6a-BAxU80gIHHe5mB3MQjjh6BAgZEAE&usg=AOvVaw2WqKpkw6YxVFFbdb4CYyLP" target="_blank">
+          <p class="video-title font-[500] mb-[10px] text-[14px]">
+          HTML & CSS Full Course-Beginner To Pro
+        </p>
+        </a>
+        
+        <p class="video-author text-[12px] text-[#606060]">
+           supersimpledev 
+        </p>
+        <p class="video-stats text-[12px] text-[#606060]">
+          6.5M views &#183; 1 year ago
+        </p>
+     </div>
+    </div>
+   </div>
+
+  <div class="video-preview">
+    <div class="thumbnail-row relative mb-2">
+      <img class="thumbnail w-[100%]" src="thumbnails/thumbnail-3.webp">
+      <div class="time text-[12px] bg-black font-[500] text-white absolute right-[5px] bottom-2 p-1 rounded-[2px]">9:14</div>
+    </div>
+    <div class="video-info-grid grid grid-cols-[50px_1fr]">
+      <div class="channel-picture relative">
+        <img class="profile-picture rounded-[50px] w-[36px]" src="channel-pictures/channel-3.jpeg">
+      </div>
+      <div class="video-info">
+        <a class="video-title-link" href="https://www.youtube.com/watch?v=FgjPQQeTh1w" target="_blank">
+          <p class="video-title  text-[14px] font-[500] mb-[10px]">
+          Crazy Tik Toks Taken Moments Befor DISASTER
+        </p>
+        </a>
+        <p class="video-author text-[12px]">
+          sssniperWolf
+        </p>
+        <p class="video-stats">
+          12M views &#183; 1 year ago
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="video-preview">
+    <div class="thumbnail-row">
+      <img class="thumbnail w-[100%]" src="thumbnails/thumbnail-9.webp">
+      <div class="time text-[12px] bg-black font-[500] text-white absolute right-[5px] bottom-2 p-1 rounded-[2px]">12:30</div>
+    </div>
+    <div class="video-info-grid grid grid-cols-[50px_1fr]">
+      <a href="https://www.youtube.com/c/mkbhd" target="_blank">
+        <div class="channel-picture relative">
+        <img class="profile-picture rounded-[50px] w-[36px]" src="channel-pictures/channel-9.jpeg">
+      </div>
+        
+      </a>
+      
+      <div class="video-info">
+        <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank" class="video-title-link">
+          <p class="video-title text-[14px] font-[500] mb-[10px]">
+          Talking Tech and AI with Google CEO Sundar Pichai!
+        </p>
+        </a>
+        <p class="video-author text-[12px]">
+          Marques Brownlee
+        </p>
+        <p class="video-stats">
+          3.4M views &#183; 6 months ago
+        </p>
+      </div>
+    </div>
+  </div>
+  </section>
+  </main>
+
+  <script type="module" src="scripts/render-video.js"></script>
   </body>
 </html>
