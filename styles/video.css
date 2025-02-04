@@ -40,8 +40,8 @@
   
     }
     .dev-tooltip {
-    width: 200px;
-    background-color: white;
+      width: 200px;
+      background-color: white;
       position: absolute;
       top: 55px;
       display: flex;
@@ -55,7 +55,6 @@
     }
     .channel-picture:hover .dev-tooltip {
     opacity: 1;
-    
     }
     .dev-tooltip .dev-picture {
       width: 36px;

@@ -1,4 +1,4 @@
-const videos = [
+   const videos = [
   {
     id: "n2RNcPRtAiY",
     thumbnail: "thumbnails/thumbnail-1.webp",
@@ -9,6 +9,7 @@ const videos = [
     title: "Talking Tech and AI with Google CEO Sundar Pichai!",
     author: "Marques Brownlee",
     stats: "3.4M views · 6 months ago",
+    channelStats: "2M Subscribers",
   },
   {
     id: "mP0RAo9SKZk",
@@ -20,6 +21,7 @@ const videos = [
     title: "Try Not To Laugh Challenge #9",
     author: "Markiplier",
     stats: "19M views · 4 years ago",
+    channelStats: "2M Subscribers",
   },
   {
     id: "FgjPQQeTh1w",
@@ -31,6 +33,7 @@ const videos = [
     title: "Crazy TikToks Taken Moments Before Disaster",
     author: "SSSniperWolf",
     stats: "12M views · 1 year ago",
+    channelStats: "2M Subscribers",
   },
   {
     id: "094y1Z2wpJg",
@@ -42,6 +45,7 @@ const videos = [
     title: "The Simplest Math Problem No One Can Solve - Collatz Conjecture",
     author: "Veritasium",
     stats: "18M views · 4 months ago",
+    channelStats: "2M Subscribers",
   },
   {
     id: "86CQq3pKSUw",
@@ -53,6 +57,7 @@ const videos = [
     title: "Kadane's Algorithm to Maximum Sum Subarray Problem",
     author: "CS Dojo",
     stats: "519k views · 5 years ago",
+    channelStats: "2M Subscribers",
   },
   {
     id: "yXWw0_UfSFg",
@@ -64,6 +69,7 @@ const videos = [
     title: "Anything You Can Fit In The Circle I'll Pay For",
     author: "MrBeast",
     stats: "141M views · 1 year ago",
+    channelStats: "2M Subscribers",
   },
   {
     id: "G3e-cpL7ofc",
@@ -75,6 +81,7 @@ const videos = [
     title: "HTML & CSS Full Course - Beginner To Pro",
     author: "supersimpledev",
     stats: "6.5M views · 1 year ago",
+    channelStats: "2M Subscribers",
   },
   {
     id: "7",
@@ -86,6 +93,7 @@ const videos = [
     title: "Talking Tech and AI with Google CEO Sundar Pichai!",
     author: "Marques Brownlee",
     stats: "3.4M views · 6 months ago",
+    channelStats: "2M Subscribers",
   },
   {
     id: "8",
@@ -97,6 +105,7 @@ const videos = [
     title: "Talking Tech and AI with Google CEO Sundar Pichai!",
     author: "Marques Brownlee",
     stats: "3.4M views · 6 months ago",
+    channelStats: "2M Subscribers",
   },
   {
     id: "9",
@@ -108,6 +117,7 @@ const videos = [
     title: "Talking Tech and AI with Google CEO Sundar Pichai!",
     author: "Marques Brownlee",
     stats: "3.4M views · 6 months ago",
+    channelStats: "2M Subscribers",
   },
   {
     id: "10",
@@ -119,6 +129,7 @@ const videos = [
     title: "Talking Tech and AI with Google CEO Sundar Pichai!",
     author: "Marques Brownlee",
     stats: "3.4M views · 6 months ago",
+    channelStats: "2M Subscribers",
   },
   {
     id: "11",
@@ -130,6 +141,7 @@ const videos = [
     title: "Talking Tech and AI with Google CEO Sundar Pichai!",
     author: "Marques Brownlee",
     stats: "3.4M views · 6 months ago",
+    channelStats: "2M Subscribers",
   },
   {
     id: "12",
@@ -141,10 +153,11 @@ const videos = [
     title: "Talking Tech and AI with Google CEO Sundar Pichai!",
     author: "Marques Brownlee",
     stats: "3.4M views · 6 months ago",
+    channelStats: "2M Subscribers",
   }
 ];
 
-
+ export default videos;
 
 
 
