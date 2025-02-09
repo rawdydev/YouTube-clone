@@ -44,4 +44,5 @@ const renderVideos = () => {
   document.querySelector(".video-grid").innerHTML = videos;
 }
 
-renderVideos() 
+renderVideos()
+export default renderVideos
