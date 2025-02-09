@@ -1,99 +1,13 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script> 
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <title>Youtube Tailwind</title> 
-    <style type="text/tailwindcss">
-      .channel-picture:hover .dev-tooltip {
-        opacity: 1;
-      }
-    </style>
+    <title>Vite + React</title>
   </head>
-  <body class="bg-[#F8F8F8] lg:text-[14px]">
-    <header class="bg-white shadow-md h-14 px-4 md:px-6 flex justify-between items-center sticky top-0 z-50">
-      <div class="flex items-center">
-          <button class="p-2 hover:bg-gray-100 rounded-full">
-              <img src="images/icons/hamburger-menu.svg" alt="Menu" class="w-6 h-6">
-          </button>
-          <img src="images/icons/youtube-logo.svg" alt="YouTube" class="ml-4 hidden sm:block h-5">
-          <img src="images/icons/youtube-logo.svg" alt="YouTube" class="ml-4 sm:hidden h-5">
-      </div>
-      
-      <div class="flex-grow max-w-2xl mx-4 hidden md:flex">
-          <div class="flex w-full">
-              <input 
-                  type="search" 
-                  placeholder="Search" 
-                  class="w-full px-4 py-2 text-gray-700 bg-gray-100 rounded-l-full border border-gray-300 focus:outline-none focus:border-blue-500"
-              >
-              <button class="px-6 bg-gray-100 rounded-r-full border border-l-0 border-gray-300 hover:bg-gray-200">
-                  <img src="images/icons/search.svg" alt="Search" class="w-5 h-5">
-              </button>
-          </div>
-          <button class="ml-4 p-2 bg-gray-100 rounded-full hover:bg-gray-200">
-              <img src="images/icons/voice-search-icon.svg" alt="Voice Search" class="w-6 h-6">
-          </button>
-      </div>
-      
-      <div class="flex items-center">
-          <button class="p-2 hover:bg-gray-100 rounded-full md:hidden">
-              <img src="images/icons/search.svg" alt="Search" class="w-6 h-6">
-          </button>
-          <button class="p-2 hover:bg-gray-100 rounded-full hidden sm:block">
-              <img src="images/icons/upload.svg" alt="Upload" class="w-6 h-6">
-          </button>
-          <button class="p-2 hover:bg-gray-100 rounded-full hidden sm:block">
-              <img src="images/icons/youtube-apps.svg" alt="YouTube Apps" class="w-6 h-6">
-          </button>
-          <button class="p-2 hover:bg-gray-100 rounded-full relative">
-              <img src="images/icons/notifications.svg" alt="Notifications" class="w-6 h-6">
-              <span class="absolute top-0 right-0 bg-red-500 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">
-                  3
-              </span>
-          </button>
-          <button class="ml-2 rounded-full overflow-hidden">
-              <img src="images/channel-pictures/my-channel.jpeg" alt="Channel" class="w-8 h-8">
-          </button>
-      </div>
-  </header>
-
-  <nav class="sidebar hidden md:inline-block bg-white fixed top-[55px] bottom-0 left-0 md:w-[72px] lg:w-[240px] 
-  border-r-2 border-[#EBEBEB] z-200 pt-[5px]">
-    <div class="sidebar-link bg-white flex flex-col lg:flex-row cursor h-[74px] items-center hover:bg-[#EBEBEB]">
-      <img class="h-6 lg:px-[15px]"  src="images/icons/home.svg">
-      <div class="text-[10px]">Home</div>
-    </div>
-    <div class="sidebar-link bg-white flex flex-col lg:flex-row cursor h-[74px] items-center hover:bg-[#EBEBEB] ">
-      <img class="h-6 lg:px-[15px]"  src="images/icons/explore.svg">
-      <div class="text-[10px]">Explore</div>
-    </div>
-    <div class="sidebar-link bg-white flex flex-col lg:flex-row cursor h-[74px] items-center hover:bg-[#EBEBEB] ">
-      <img class="h-6 lg:px-[15px]"  src="images/icons/subscriptions.svg">
-      <div class="text-[10px]">Subscriptions</div>
-    </div>
-    <div class="sidebar-link bg-white flex flex-col lg:flex-row cursor h-[74px] items-center hover:bg-[#EBEBEB] ">
-      <img class="h-6 lg:px-[15px]"  src="images/icons/originals.svg">
-      <div class="text-[10px]">Orginals</div>
-    </div>
-    <div class="sidebar-link bg-white flex flex-col lg:flex-row cursor h-[74px] items-center hover:bg-[#EBEBEB] ">
-      <img class="h-6 lg:px-[15px]"  src="images/icons/YouTube-music.svg">
-      <div class="text-[10px]">YouTube Music</div>
-    </div>
-    <div class="sidebar-link bg-white flex flex-col lg:flex-row cursor h-[74px] items-center hover:bg-[#EBEBEB] ">
-      <img class="h-6 lg:px-[15px]"  src="images/icons/library.svg">
-      <div class="text-[10px]">Library</div>
-    </div>
-  </nav>
-
-  <main class="p-5 md:ml-[74px] lg:ml-[240px]">
-    <section class="video-grid grid sm:grid-cols-2 gap-y-10 gap-x-4 md:grid-cols-3 lg:grid-rows-2">
-      
-  </section>
-  </main>
-
-  <script type="module" src="scripts/render-video.js"></script>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
