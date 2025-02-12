@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.channel-picture:hover .dev-tooltip {
+  opacity: 1;
+}

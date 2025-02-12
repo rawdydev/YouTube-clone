@@ -1,0 +1,2 @@
+i will be putting my test there after learning jest or somekinda of react testing framwork.
+for now i only know jasmine and it works best for vanilla javaScript.
